@@ -40,13 +40,15 @@ const App = () => {
 
 	return (
 		<React.Fragment>
-			<Header />
+			{/* <Header /> */}
 			<main>
 				<Intro onClick={setSelectedData} selectedData={selectedData} />
-				<section className="chart-container">
-					<Polar data={data} options={options} />
-				</section>
-				<CategoryDetail selectedData={selectedData} />
+				<div className="main-data">
+					<section className="chart-container">
+						<Polar data={data} options={options} />
+					</section>
+					<CategoryDetail selectedData={selectedData} />
+				</div>
 			</main>
 		</React.Fragment>
 	);

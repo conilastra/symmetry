@@ -7,8 +7,7 @@ const Intro = ({ onClick, selectedData }) => {
 			<h3 className="intro__title">
 				¿Qué tan <span className="intro__title--logo">simétricas</span> son nuestras visiones?
 			</h3>
-			<p>
-				{' '}
+			<p className="intro__text">
 				Explora qué tan similares son nuestras nociones en torno a conceptos sobre cómo nos relacionamos.
 				Ámbitos:
 			</p>
