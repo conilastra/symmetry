@@ -31,7 +31,7 @@ const App = () => {
 				color: '#ffffff36'
 			}
 		},
-		responsive: true
+		maintainAspectRatio: false
 	};
 
 	return (
