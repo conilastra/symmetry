@@ -1,9 +1,20 @@
 :root {
+	/* Fonts */
 	--quicksand: 'Quicksand', sans-serif;
 	--poppins: 'Poppins', sans-serif;
 	--lexend: 'Lexend Zetta', sans-serif;
+
+	/* Colors */
+	--light-gray: #525252;
 	--dark-gray: #202225;
 	--gray: #2d2c2c;
+	--white: #eaeaea;
+
+	--disposition: rgb(93, 188, 210);
+	--expectation: rgb(113, 194, 224);
+	--rationality: rgb(119, 174, 230);
+	--emotionality: rgb(126, 153, 237);
+	--attraction: rgb(126, 133, 244);
 }
 
 body {
