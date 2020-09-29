@@ -64,7 +64,7 @@ const rawData = [
 			background: 'linear-gradient(74deg, rgba(126,133,244,1) 0%, rgba(82,94,255,1) 100%)'
 		},
 		text:
-			'Mi versión ideal del amor tiene 2 componentes: la atracción física y la emocional. Ambas son independientes e igual de importantes; para mí, atracción emocional sin atracción física es amistad. Cuando hablo de "construir en el aire" me refiero precisamente a intentar armar algo en base a una sola dimensión, sin contemplar que hay otra (o quitándole importancia a ella).'
+			'Mi versión ideal del amor tiene 2 componentes: la atracción física y la emocional. Ambas son independientes e igual de importantes para poder alcanzar un peak. Cuando hablo de "construir en el aire" me refiero precisamente a intentar armar algo en base a una sola dimensión, sin contemplar que hay otra (o quitándole importancia a ella).'
 	}
 ];
 
