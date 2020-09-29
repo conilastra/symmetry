@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { find, propEq, prop } from 'ramda';
+import { find, propEq, prop, reduce } from 'ramda';
 import { Polar } from 'react-chartjs-2';
 
 import { data, rawData } from './data-provider';
@@ -15,14 +15,36 @@ const App = () => {
 			} else {
 				setSelectedData(null);
 			}
-		}
+		}, 
+		legend: {
+			display: true,
+			position: 'bottom'
+		},
+		
+		scale: {
+			ticks: {
+			   display: false,
+			},
+			drawTicks: {
+				display: false,
+			},
+			gridLines: {
+				color: '#ffffff36',
+			},
+		 }
+
 	};
 
 	return (
+		<>
+		<header className="banner">
+			<h1 className="logo">symmetry</h1>
+		</header>
 		<main>
 			<Polar data={data} options={options} />
 			<Description selectedData={selectedData} />
 		</main>
+		</>
 	);
 };
 

@@ -3,8 +3,26 @@
 	justify-content: center;
 }
 
+.banner {
+	background: rgb(116, 212, 220);
+	background: linear-gradient(
+		90deg,
+		rgba(116, 212, 220, 1) 0%,
+		rgba(119, 174, 230, 1) 50%,
+		rgba(126, 133, 244, 1) 100%
+	);
+	color: var(--gray);
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.logo {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
 .data-description {
-	border-radius: 10px;
 	margin-top: 2rem;
 	padding: .5rem 1rem;
 }
