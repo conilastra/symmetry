@@ -7,9 +7,20 @@
 }
 
 body {
+	color: var(--gray);
 	margin: 0;
 	font-family: var(--poppins);
+	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: var(--dark-gray);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: var(--quicksand);
+	font-weight: 500;
 }

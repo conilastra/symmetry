@@ -15,36 +15,37 @@ const App = () => {
 			} else {
 				setSelectedData(null);
 			}
-		}, 
+		},
 		legend: {
-			display: true,
+			display: false,
 			position: 'bottom'
 		},
-		
 		scale: {
 			ticks: {
-			   display: false,
+				display: false
 			},
 			drawTicks: {
-				display: false,
+				display: false
 			},
 			gridLines: {
-				color: '#ffffff36',
-			},
-		 }
-
+				color: '#ffffff36'
+			}
+		},
+		responsive: true
 	};
 
 	return (
-		<>
-		<header className="banner">
-			<h1 className="logo">symmetry</h1>
-		</header>
-		<main>
-			<Polar data={data} options={options} />
-			<Description selectedData={selectedData} />
-		</main>
-		</>
+		<React.Fragment>
+			<header className="banner">
+				<h1 className="logo">symmetry</h1>
+			</header>
+			<main>
+				<section className="chart-container">
+					<Polar data={data} options={options} />
+				</section>
+				<Description selectedData={selectedData} />
+			</main>
+		</React.Fragment>
 	);
 };
 
@@ -61,7 +62,7 @@ const Description = ({ selectedData }) => {
 	return (
 		<section className="container">
 			{selectedData && (
-				<div className="data-description" style={{ backgroundColor: prop('color', currentData) }}>
+				<div className="data-description" style={prop('style', currentData)}>
 					<h2 className="data-description__title">
 						<i className="data-description__icon material-icons">{prop('icon', currentData)}</i>
 						<span className="data-description__title__text">{prop('id', currentData)}</span>
