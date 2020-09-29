@@ -1,4 +1,4 @@
-import { map, prop, reduce } from 'ramda';
+import { map, prop } from 'ramda';
 
 const rawData = [
 	{

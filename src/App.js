@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { find, propEq, prop, reduce } from 'ramda';
+import { find, propEq, prop } from 'ramda';
 import { Polar } from 'react-chartjs-2';
 
 import { data, rawData } from './data-provider';
